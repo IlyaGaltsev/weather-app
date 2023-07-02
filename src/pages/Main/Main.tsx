@@ -14,7 +14,7 @@ const Main = () => {
 
     axios
       .get(
-        `http://api.weatherapi.com/v1/current.json?key=${token}&q=${coordinates.latitude},${coordinates.longitude}`
+        `https://api.weatherapi.com/v1/current.json?key=${token}&q=${coordinates.latitude},${coordinates.longitude}`
       )
       .then(({ data }) => {
         setCurrentWeather(data)
