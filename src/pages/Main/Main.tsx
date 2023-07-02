@@ -23,7 +23,7 @@ const Main = () => {
   }
 
   useEffect(() => {
-    const fetchWeatherData = async () => {
+    const fetchWeatherData = () => {
       if (!navigator.geolocation) {
         console.log('Geolocation не поддерживается вашим браузером')
       } else {
@@ -32,10 +32,13 @@ const Main = () => {
           'navigator',
           navigator.geolocation.getCurrentPosition(
             (position: any) => {
-              const latitude = position.coords.latitude
-              const longitude = position.coords.longitude
-              console.log('latitude', latitude)
-              setCoordinates(state => (state = { latitude, longitude }))
+              setCoordinates(
+                state =>
+                  (state = {
+                    latitude: position.coords.latitude,
+                    longitude: position.coords.longitude
+                  })
+              )
             },
             () => console.log('Сегодня не фартануло тебе')
           )
@@ -44,6 +47,7 @@ const Main = () => {
     }
 
     fetchWeatherData()
+    getCurrentWeather()
   }, [])
   return (
     <div>
