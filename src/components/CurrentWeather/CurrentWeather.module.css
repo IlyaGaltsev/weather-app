@@ -1,18 +1,38 @@
 .wrapper {
-  background: gray;
   padding: 20px;
   max-width: 342px;
   display: flex;
   justify-content: space-between;
+  position: relative;
+  width: 100%;
+  /* background-color: rgba(255, 0, 0, 0.29); */
+}
+
+.wrapper ::after {
+  content: '';
+  width: 382px;
+  height: 184px;
+  z-index: -1;
+  position: absolute;
+  /* bottom: 0; */
+  left: 0;
+  top: 0;
+  background: url('../../assets/images/background-card.svg');
+
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .infoBlock {
   display: flex;
   flex-direction: column;
-
+  justify-content: flex-end;
 }
 
 .illustrationBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .title {

@@ -7,10 +7,23 @@
 }
 
 body {
-}
-body {
   margin: 0;
   font-family: SF Pro Text;
+  /* background: radial-gradient(73.19% 111.55% at 93.07% 74.31%, #45278b 0%, #2e335a 100%) ; */
+  background: linear-gradient(136deg, #2E335A 0%, #1C1B33 100%)no-repeat;
+
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+#root {
+  max-width: 1080px;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 code {
