@@ -1,0 +1,31 @@
+@font-face {
+  font-family: SF Pro Text; /* Название шрифта */
+  src: url('./assets/fonts/SFPRODISPLAYREGULAR.OTF'); /* Путь к файлу OTF-шрифта */
+  /* Дополнительные настройки шрифта (опционально) */
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+}
+body {
+  margin: 0;
+  font-family: SF Pro Text;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+strong {
+  padding: 0;
+  margin: 0;
+}
